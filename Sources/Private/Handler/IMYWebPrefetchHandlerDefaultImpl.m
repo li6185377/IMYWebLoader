@@ -7,8 +7,8 @@
 //
 
 #import "IMYWebPrefetchHandlerDefaultImpl.h"
+#import "XMLDictionary.h"
 #import "IMYWebLoader.h"
-#import <XMLDictionary.h>
 #import "IMYWebUtils.h"
 
 @interface IMYWebPrefetchOperater : NSObject <IMYWebPrefetcherProtocol>
