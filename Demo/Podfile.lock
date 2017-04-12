@@ -1,0 +1,19 @@
+PODS:
+  - IMYWebLoader (0.1):
+    - XMLDictionary
+  - XMLDictionary (1.4.1)
+
+DEPENDENCIES:
+  - IMYWebLoader (from `./..`)
+
+EXTERNAL SOURCES:
+  IMYWebLoader:
+    :path: ./..
+
+SPEC CHECKSUMS:
+  IMYWebLoader: 7f8094c8a3936f9ceee046bcde6957a15c6fccf1
+  XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
+
+PODFILE CHECKSUM: 4860998863bdd0c88d4ec89165693f448c2f0d46
+
+COCOAPODS: 1.1.1

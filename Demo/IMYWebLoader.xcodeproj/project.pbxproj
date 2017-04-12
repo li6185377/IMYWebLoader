@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		362980621E64270A0091D742 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 362980611E64270A0091D742 /* main.m */; };
+		362980651E64270A0091D742 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 362980641E64270A0091D742 /* AppDelegate.m */; };
+		3629806B1E64270A0091D742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362980691E64270A0091D742 /* Main.storyboard */; };
+		3629806D1E64270A0091D742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3629806C1E64270A0091D742 /* Assets.xcassets */; };
+		362980701E64270A0091D742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3629806E1E64270A0091D742 /* LaunchScreen.storyboard */; };
+		3629807B1E64270A0091D742 /* IMYWebLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3629807A1E64270A0091D742 /* IMYWebLoaderTests.m */; };
+		36AF08DB1E9BB6F800BAC046 /* WKURLProtocolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AF08DA1E9BB6F800BAC046 /* WKURLProtocolVC.m */; };
+		36AF08E21E9BB91700BAC046 /* IMYIndexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AF08E11E9BB91700BAC046 /* IMYIndexVC.m */; };
+		FCCBBD89D91DC203319EA56F /* libPods-IMYWebLoader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03710CF9824C45880EDAA428 /* libPods-IMYWebLoader.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		362980771E64270A0091D742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 362980551E64270A0091D742 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3629805C1E64270A0091D742;
+			remoteInfo = IMYWebLoader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03710CF9824C45880EDAA428 /* libPods-IMYWebLoader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IMYWebLoader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E1013721227A4D6FC824714 /* Pods-IMYWebLoader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMYWebLoader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMYWebLoader/Pods-IMYWebLoader.debug.xcconfig"; sourceTree = "<group>"; };
+		3629805D1E64270A0091D742 /* IMYWebLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMYWebLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		362980611E64270A0091D742 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		362980631E64270A0091D742 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		362980641E64270A0091D742 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3629806A1E64270A0091D742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3629806C1E64270A0091D742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3629806F1E64270A0091D742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		362980711E64270A0091D742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		362980761E64270A0091D742 /* IMYWebLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMYWebLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3629807A1E64270A0091D742 /* IMYWebLoaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMYWebLoaderTests.m; sourceTree = "<group>"; };
+		3629807C1E64270A0091D742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36AF08D91E9BB6F800BAC046 /* WKURLProtocolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKURLProtocolVC.h; sourceTree = "<group>"; };
+		36AF08DA1E9BB6F800BAC046 /* WKURLProtocolVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKURLProtocolVC.m; sourceTree = "<group>"; };
+		36AF08E01E9BB91700BAC046 /* IMYIndexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMYIndexVC.h; sourceTree = "<group>"; };
+		36AF08E11E9BB91700BAC046 /* IMYIndexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMYIndexVC.m; sourceTree = "<group>"; };
+		433795A53BC2B8F0327E78AD /* Pods-IMYWebLoader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMYWebLoader.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMYWebLoader/Pods-IMYWebLoader.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3629805A1E64270A0091D742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCBBD89D91DC203319EA56F /* libPods-IMYWebLoader.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362980731E64270A0091D742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25E668C9C0FB2F4B8A3E476A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03710CF9824C45880EDAA428 /* libPods-IMYWebLoader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		362980541E64270A0091D742 = {
+			isa = PBXGroup;
+			children = (
+				3629805F1E64270A0091D742 /* IMYWebLoader */,
+				362980791E64270A0091D742 /* IMYWebLoaderTests */,
+				3629805E1E64270A0091D742 /* Products */,
+				5023865AF897388D81F3E50F /* Pods */,
+				25E668C9C0FB2F4B8A3E476A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3629805E1E64270A0091D742 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3629805D1E64270A0091D742 /* IMYWebLoader.app */,
+				362980761E64270A0091D742 /* IMYWebLoaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3629805F1E64270A0091D742 /* IMYWebLoader */ = {
+			isa = PBXGroup;
+			children = (
+				362980631E64270A0091D742 /* AppDelegate.h */,
+				362980641E64270A0091D742 /* AppDelegate.m */,
+				362980691E64270A0091D742 /* Main.storyboard */,
+				3629806C1E64270A0091D742 /* Assets.xcassets */,
+				3629806E1E64270A0091D742 /* LaunchScreen.storyboard */,
+				362980711E64270A0091D742 /* Info.plist */,
+				362980601E64270A0091D742 /* Supporting Files */,
+				36AF08D91E9BB6F800BAC046 /* WKURLProtocolVC.h */,
+				36AF08DA1E9BB6F800BAC046 /* WKURLProtocolVC.m */,
+				36AF08E01E9BB91700BAC046 /* IMYIndexVC.h */,
+				36AF08E11E9BB91700BAC046 /* IMYIndexVC.m */,
+			);
+			path = IMYWebLoader;
+			sourceTree = "<group>";
+		};
+		362980601E64270A0091D742 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				362980611E64270A0091D742 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		362980791E64270A0091D742 /* IMYWebLoaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				3629807A1E64270A0091D742 /* IMYWebLoaderTests.m */,
+				3629807C1E64270A0091D742 /* Info.plist */,
+			);
+			path = IMYWebLoaderTests;
+			sourceTree = "<group>";
+		};
+		5023865AF897388D81F3E50F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E1013721227A4D6FC824714 /* Pods-IMYWebLoader.debug.xcconfig */,
+				433795A53BC2B8F0327E78AD /* Pods-IMYWebLoader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3629805C1E64270A0091D742 /* IMYWebLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3629807F1E64270A0091D742 /* Build configuration list for PBXNativeTarget "IMYWebLoader" */;
+			buildPhases = (
+				EABFC25E6BE876D8287524E4 /* [CP] Check Pods Manifest.lock */,
+				362980591E64270A0091D742 /* Sources */,
+				3629805A1E64270A0091D742 /* Frameworks */,
+				3629805B1E64270A0091D742 /* Resources */,
+				AE1F4A421A66A1E5D15F5120 /* [CP] Embed Pods Frameworks */,
+				B33618F5C5C3A08ADC28888E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMYWebLoader;
+			productName = IMYWebLoader;
+			productReference = 3629805D1E64270A0091D742 /* IMYWebLoader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		362980751E64270A0091D742 /* IMYWebLoaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 362980821E64270A0091D742 /* Build configuration list for PBXNativeTarget "IMYWebLoaderTests" */;
+			buildPhases = (
+				362980721E64270A0091D742 /* Sources */,
+				362980731E64270A0091D742 /* Frameworks */,
+				362980741E64270A0091D742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				362980781E64270A0091D742 /* PBXTargetDependency */,
+			);
+			name = IMYWebLoaderTests;
+			productName = IMYWebLoaderTests;
+			productReference = 362980761E64270A0091D742 /* IMYWebLoaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		362980551E64270A0091D742 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = meetyou;
+				TargetAttributes = {
+					3629805C1E64270A0091D742 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 588AWE66S7;
+						ProvisioningStyle = Automatic;
+					};
+					362980751E64270A0091D742 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 588AWE66S7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3629805C1E64270A0091D742;
+					};
+				};
+			};
+			buildConfigurationList = 362980581E64270A0091D742 /* Build configuration list for PBXProject "IMYWebLoader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 362980541E64270A0091D742;
+			productRefGroup = 3629805E1E64270A0091D742 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3629805C1E64270A0091D742 /* IMYWebLoader */,
+				362980751E64270A0091D742 /* IMYWebLoaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3629805B1E64270A0091D742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362980701E64270A0091D742 /* LaunchScreen.storyboard in Resources */,
+				3629806D1E64270A0091D742 /* Assets.xcassets in Resources */,
+				3629806B1E64270A0091D742 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362980741E64270A0091D742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE1F4A421A66A1E5D15F5120 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMYWebLoader/Pods-IMYWebLoader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B33618F5C5C3A08ADC28888E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMYWebLoader/Pods-IMYWebLoader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EABFC25E6BE876D8287524E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		362980591E64270A0091D742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362980651E64270A0091D742 /* AppDelegate.m in Sources */,
+				36AF08E21E9BB91700BAC046 /* IMYIndexVC.m in Sources */,
+				36AF08DB1E9BB6F800BAC046 /* WKURLProtocolVC.m in Sources */,
+				362980621E64270A0091D742 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362980721E64270A0091D742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3629807B1E64270A0091D742 /* IMYWebLoaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		362980781E64270A0091D742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3629805C1E64270A0091D742 /* IMYWebLoader */;
+			targetProxy = 362980771E64270A0091D742 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		362980691E64270A0091D742 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3629806A1E64270A0091D742 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3629806E1E64270A0091D742 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3629806F1E64270A0091D742 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3629807D1E64270A0091D742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3629807E1E64270A0091D742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		362980801E64270A0091D742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E1013721227A4D6FC824714 /* Pods-IMYWebLoader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 588AWE66S7;
+				INFOPLIST_FILE = IMYWebLoader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = meetyou.IMYWebLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		362980811E64270A0091D742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433795A53BC2B8F0327E78AD /* Pods-IMYWebLoader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 588AWE66S7;
+				INFOPLIST_FILE = IMYWebLoader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = meetyou.IMYWebLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		362980831E64270A0091D742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 588AWE66S7;
+				INFOPLIST_FILE = IMYWebLoaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = meetyou.IMYWebLoaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMYWebLoader.app/IMYWebLoader";
+			};
+			name = Debug;
+		};
+		362980841E64270A0091D742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 588AWE66S7;
+				INFOPLIST_FILE = IMYWebLoaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = meetyou.IMYWebLoaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMYWebLoader.app/IMYWebLoader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		362980581E64270A0091D742 /* Build configuration list for PBXProject "IMYWebLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3629807D1E64270A0091D742 /* Debug */,
+				3629807E1E64270A0091D742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3629807F1E64270A0091D742 /* Build configuration list for PBXNativeTarget "IMYWebLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362980801E64270A0091D742 /* Debug */,
+				362980811E64270A0091D742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		362980821E64270A0091D742 /* Build configuration list for PBXNativeTarget "IMYWebLoaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362980831E64270A0091D742 /* Debug */,
+				362980841E64270A0091D742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 362980551E64270A0091D742 /* Project object */;
+}

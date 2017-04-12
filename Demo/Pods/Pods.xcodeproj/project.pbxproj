@@ -1,0 +1,885 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020FB6622AF33495BD84FAF17C229412 /* NSObject+WKCustomProtocolLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = D563AD4C2CB1406C681C506145FC62EB /* NSObject+WKCustomProtocolLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		049125CCBD1E4E48E417C30880AA5E70 /* IMYWebPrefetchHandlerDefaultImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = C3151AE5832162BBA2E875782D30D4CA /* IMYWebPrefetchHandlerDefaultImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		074A90D82FA3046A062867BD2A3544AE /* IMYWebRequestHandleManagerDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A2574FC1CE0C1D33DB6F741D4BDBD /* IMYWebRequestHandleManagerDefaultImpl.m */; };
+		0D7306FEABE5C52E9BD9222E515D17FC /* XMLDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 169B28CBA254ED18ED7D3572533C91F3 /* XMLDictionary-dummy.m */; };
+		10C5BD4EF83CC79057DE8177FEAE2699 /* IMYWebDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7055851C79D40C4D2601C30D6422F1 /* IMYWebDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		118703A0B27D8BE032448BF8E7218876 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D4822E3EFC2DBE89F4DB43D54B1E5ED3 /* XMLDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		163E102EB5C64542EA2EE28DAC02B294 /* IMYWebLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 607D3E9F26852D2EDD805CDE342E65EA /* IMYWebLoader-dummy.m */; };
+		2519C632856C0906596A037A5C4B9AD6 /* Pods-IMYWebLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBAB6513E884072F16D57BBAE9057E1 /* Pods-IMYWebLoader-dummy.m */; };
+		2C3A9DF7E9BEC4A02DBAC87DC32EDCA6 /* IMYWebLoader+Impl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4764B6ACA37506631A3877D6E6E660 /* IMYWebLoader+Impl.m */; };
+		393409694F95312098AD4CBCBBE9BE10 /* IMYWebAjaxHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C70FCBA7C1CA0F7C708F4320CAC383 /* IMYWebAjaxHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41473B39D21EC87364AB4AD3605A4965 /* IMYWebNetworkHandlerDefaultImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6976A248C051C88E83FF9B656A771E /* IMYWebNetworkHandlerDefaultImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		480DF9BEB028700172A6A4724B62ABB6 /* IMYWebData.h in Headers */ = {isa = PBXBuildFile; fileRef = B6772EDBE07BECC489A276FD7E267933 /* IMYWebData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A9E995FFA4DF1755755069970F51066 /* IMYWebUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B5D2BEBA31696095327500F9698EFD /* IMYWebUtils.m */; };
+		4FB83EAD7E47C7699BC80817DC0B7787 /* IMYWebData.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E4BA401FF36F4113838FDF4605E109 /* IMYWebData.m */; };
+		56C34BD106D3F8AA93DD5E6AED7FBC7A /* IMYWebAjaxHandlerDefaultImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = C3DD8EC76B96681EFD339E4BDC337F6A /* IMYWebAjaxHandlerDefaultImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58C66C9AE971D25506FB21529C072CFD /* IMYWebRequestHandlerDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = AF22F8742322EB29FF7FE5A004DD98E9 /* IMYWebRequestHandlerDefaultImpl.m */; };
+		5A63288A557273DE6BC51B518DE95241 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5B6AEB23A102D9197A955238B4E5292A /* WKUserContentController+IMYHookAjax.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F675D06FB5B17B7D7FCFEF44A7DB3EA /* WKUserContentController+IMYHookAjax.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E1E68C8572414657003AB24D8562B5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5F453934EDB30AC4945532BD82E32BB2 /* IMYWebNetworkHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C7EDC5D569D587B03CFFA90E3206EBB7 /* IMYWebNetworkHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66C3480B3B6E130823872459A5199179 /* IMYWebCacheHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD0817A11C996A0CA63088FAE30AC53 /* IMYWebCacheHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FB88E598D5AC9A33828EFBF27BCD260 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		727B06978C5CBB50F80B45B88FE1148B /* NSObject+WKCustomProtocolLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B6D4CFCEADAEC7FCB92D162F4981E /* NSObject+WKCustomProtocolLoader.m */; };
+		8988814BA9CB2157B9F6D1A4D6B43F22 /* IMYWebPrefetchHandlerDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38C68E14CB0D7585B9EA83520863D2 /* IMYWebPrefetchHandlerDefaultImpl.m */; };
+		89CC7BF2CEDA8E3BA62E223D882C5077 /* IMYWebUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C36820FD94D18405C045A443E8B7F589 /* IMYWebUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EBCC077E0EFE525744B39BBFA3ACF08 /* XMLDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA08F978C199208824F5C0AD0B1826D /* XMLDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2391408122F34925E05D113F64067DB /* IMYWebPrefetchHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 27C8F6576ECEF8D8FDE4BD6CB081DACC /* IMYWebPrefetchHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A626681A504BCD5C042A806841A1FFC1 /* IMYWebNetworkHandlerDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 685466DEEC203371A152EE727B509A37 /* IMYWebNetworkHandlerDefaultImpl.m */; };
+		A95F7473CFD005F301C85DCE159DD62E /* IMYWebAjaxHandlerDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F14BF7FDFF3383E755F3C81C10B00 /* IMYWebAjaxHandlerDefaultImpl.m */; };
+		AE9F6F0011CBD0EC0A2C97565BC0CD72 /* IMYWebCacheHandlerDefaultImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 13A867AD455B01AA6393B4DBF1748626 /* IMYWebCacheHandlerDefaultImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAFBED3F5D9130823C222B61FBCB18CA /* WKUserContentController+IMYHookAjax.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB6750E8F06E61EB6FF8EDFF88482EC /* WKUserContentController+IMYHookAjax.m */; };
+		CDEA55387077D27A7A826E542A2C3A2D /* IMYWebRequestHandleManagerDefaultImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = FC92C42DEC67C24F091E2F178D9F7D06 /* IMYWebRequestHandleManagerDefaultImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D38DF02BBAA79F133E3EDCBEDA385DC6 /* IMYWebURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 343CEC2DFCD0883F7C92F15721883C6B /* IMYWebURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D891C74C7D4C6DC141BDD41BED948F89 /* IMYWebRequestHandlerDefaultImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = C4BF8FB2355C9D40E51BA4E990E8BE0B /* IMYWebRequestHandlerDefaultImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E13C3BC3E18442DCB64581CBE0DC4CFB /* IMYWebLoader+Impl.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFF942CBE3C5683AC2E28FE70D4A27A /* IMYWebLoader+Impl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB2BD6410EC057086C9636D555389FDD /* IMYWebCacheHandlerDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E17B39DDF2A484F9EB8BA8731D15ACD /* IMYWebCacheHandlerDefaultImpl.m */; };
+		F603231EDEF9DF53984C7FD60B34434A /* IMYWebOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9018A400B7943ADD659A698352B06C89 /* IMYWebOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F93C03442B4C7AA2EA67433D1FF97266 /* IMYWebLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F555E0AD9A5C533E4F2ADCDA9576A6 /* IMYWebLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB14628CCCCC8504854E13224E2532D3 /* IMYWebRequestHandleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1792D41186D051341509C323CD5FEDAB /* IMYWebRequestHandleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBB4661C8C2C3F8BC82F7C4A5A888267 /* IMYWebURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D367B93F5860EBC39008EC0363C67C2C /* IMYWebURLProtocol.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63CEC978B4479414747C699CE608E9FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8A71840FB9E9E20AD215722C2DE5F4F;
+			remoteInfo = XMLDictionary;
+		};
+		CFB636C1D56C964C27F70E7C18219108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCEB5A5E4179EE67B3A38CDB55083BC8;
+			remoteInfo = IMYWebLoader;
+		};
+		D7F73BB0ED48B3EBFAF0CD5B58EA15E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8A71840FB9E9E20AD215722C2DE5F4F;
+			remoteInfo = XMLDictionary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04BA1C58D435CB2A9029BE02E8789909 /* Pods-IMYWebLoader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMYWebLoader.debug.xcconfig"; sourceTree = "<group>"; };
+		05C70FCBA7C1CA0F7C708F4320CAC383 /* IMYWebAjaxHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebAjaxHandler.h; sourceTree = "<group>"; };
+		094F14BF7FDFF3383E755F3C81C10B00 /* IMYWebAjaxHandlerDefaultImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IMYWebAjaxHandlerDefaultImpl.m; sourceTree = "<group>"; };
+		0A6B6D4CFCEADAEC7FCB92D162F4981E /* NSObject+WKCustomProtocolLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WKCustomProtocolLoader.m"; sourceTree = "<group>"; };
+		0F675D06FB5B17B7D7FCFEF44A7DB3EA /* WKUserContentController+IMYHookAjax.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WKUserContentController+IMYHookAjax.h"; sourceTree = "<group>"; };
+		13A867AD455B01AA6393B4DBF1748626 /* IMYWebCacheHandlerDefaultImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebCacheHandlerDefaultImpl.h; sourceTree = "<group>"; };
+		169B28CBA254ED18ED7D3572533C91F3 /* XMLDictionary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XMLDictionary-dummy.m"; sourceTree = "<group>"; };
+		16F857CDF7EC83CF372AAA1E75343DB2 /* IMYWebLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMYWebLoader-prefix.pch"; sourceTree = "<group>"; };
+		1792D41186D051341509C323CD5FEDAB /* IMYWebRequestHandleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebRequestHandleManager.h; sourceTree = "<group>"; };
+		27C8F6576ECEF8D8FDE4BD6CB081DACC /* IMYWebPrefetchHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebPrefetchHandler.h; sourceTree = "<group>"; };
+		2A6976A248C051C88E83FF9B656A771E /* IMYWebNetworkHandlerDefaultImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebNetworkHandlerDefaultImpl.h; sourceTree = "<group>"; };
+		2C53C75BF246ADB8AA5611CC9F8F7181 /* IMYWebLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IMYWebLoader.xcconfig; sourceTree = "<group>"; };
+		343CEC2DFCD0883F7C92F15721883C6B /* IMYWebURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebURLProtocol.h; sourceTree = "<group>"; };
+		3A38C68E14CB0D7585B9EA83520863D2 /* IMYWebPrefetchHandlerDefaultImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IMYWebPrefetchHandlerDefaultImpl.m; sourceTree = "<group>"; };
+		3E17B39DDF2A484F9EB8BA8731D15ACD /* IMYWebCacheHandlerDefaultImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IMYWebCacheHandlerDefaultImpl.m; sourceTree = "<group>"; };
+		4EBAB6513E884072F16D57BBAE9057E1 /* Pods-IMYWebLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMYWebLoader-dummy.m"; sourceTree = "<group>"; };
+		572F54EE9EBB713EEF7655E94000E667 /* Pods-IMYWebLoader-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMYWebLoader-acknowledgements.markdown"; sourceTree = "<group>"; };
+		607D3E9F26852D2EDD805CDE342E65EA /* IMYWebLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IMYWebLoader-dummy.m"; sourceTree = "<group>"; };
+		685466DEEC203371A152EE727B509A37 /* IMYWebNetworkHandlerDefaultImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IMYWebNetworkHandlerDefaultImpl.m; sourceTree = "<group>"; };
+		6D1A0E5AFB90930B638BB83B1FF4184D /* XMLDictionary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMLDictionary-prefix.pch"; sourceTree = "<group>"; };
+		6E73F934D6659D2F14126867C0877784 /* Pods-IMYWebLoader-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMYWebLoader-acknowledgements.plist"; sourceTree = "<group>"; };
+		6FD0817A11C996A0CA63088FAE30AC53 /* IMYWebCacheHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebCacheHandler.h; sourceTree = "<group>"; };
+		7103D1FAD6CCBB103036ED571878E985 /* imywk_hookajax.js */ = {isa = PBXFileReference; includeInIndex = 1; path = imywk_hookajax.js; sourceTree = "<group>"; };
+		7FB6750E8F06E61EB6FF8EDFF88482EC /* WKUserContentController+IMYHookAjax.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WKUserContentController+IMYHookAjax.m"; sourceTree = "<group>"; };
+		83E4BA401FF36F4113838FDF4605E109 /* IMYWebData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IMYWebData.m; sourceTree = "<group>"; };
+		860EF35475208355554ABDCF2F64FE77 /* Pods-IMYWebLoader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMYWebLoader.release.xcconfig"; sourceTree = "<group>"; };
+		8A4764B6ACA37506631A3877D6E6E660 /* IMYWebLoader+Impl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IMYWebLoader+Impl.m"; sourceTree = "<group>"; };
+		9018A400B7943ADD659A698352B06C89 /* IMYWebOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebOperation.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95270427F9DA32931F1AADFD7E425AA5 /* libXMLDictionary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libXMLDictionary.a; path = libXMLDictionary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D93B3F4C8FB9DE0DFBAB64B3DAA08A0 /* XMLDictionary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMLDictionary.xcconfig; sourceTree = "<group>"; };
+		ACFF942CBE3C5683AC2E28FE70D4A27A /* IMYWebLoader+Impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMYWebLoader+Impl.h"; sourceTree = "<group>"; };
+		AE9A2574FC1CE0C1D33DB6F741D4BDBD /* IMYWebRequestHandleManagerDefaultImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IMYWebRequestHandleManagerDefaultImpl.m; sourceTree = "<group>"; };
+		AF22F8742322EB29FF7FE5A004DD98E9 /* IMYWebRequestHandlerDefaultImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IMYWebRequestHandlerDefaultImpl.m; sourceTree = "<group>"; };
+		AF7055851C79D40C4D2601C30D6422F1 /* IMYWebDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebDefines.h; sourceTree = "<group>"; };
+		B3F555E0AD9A5C533E4F2ADCDA9576A6 /* IMYWebLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebLoader.h; sourceTree = "<group>"; };
+		B6772EDBE07BECC489A276FD7E267933 /* IMYWebData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebData.h; sourceTree = "<group>"; };
+		BAA08F978C199208824F5C0AD0B1826D /* XMLDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMLDictionary.h; path = XMLDictionary/XMLDictionary.h; sourceTree = "<group>"; };
+		BDD2B876D28BBE83C596DF885C9994BD /* Pods-IMYWebLoader-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMYWebLoader-frameworks.sh"; sourceTree = "<group>"; };
+		C3151AE5832162BBA2E875782D30D4CA /* IMYWebPrefetchHandlerDefaultImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebPrefetchHandlerDefaultImpl.h; sourceTree = "<group>"; };
+		C36820FD94D18405C045A443E8B7F589 /* IMYWebUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebUtils.h; sourceTree = "<group>"; };
+		C3DD8EC76B96681EFD339E4BDC337F6A /* IMYWebAjaxHandlerDefaultImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebAjaxHandlerDefaultImpl.h; sourceTree = "<group>"; };
+		C4BF8FB2355C9D40E51BA4E990E8BE0B /* IMYWebRequestHandlerDefaultImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebRequestHandlerDefaultImpl.h; sourceTree = "<group>"; };
+		C7EDC5D569D587B03CFFA90E3206EBB7 /* IMYWebNetworkHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebNetworkHandler.h; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC403DCCADAF30EA6311CE68ED86AAF9 /* libIMYWebLoader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libIMYWebLoader.a; path = libIMYWebLoader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D367B93F5860EBC39008EC0363C67C2C /* IMYWebURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IMYWebURLProtocol.m; sourceTree = "<group>"; };
+		D4822E3EFC2DBE89F4DB43D54B1E5ED3 /* XMLDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMLDictionary.m; path = XMLDictionary/XMLDictionary.m; sourceTree = "<group>"; };
+		D563AD4C2CB1406C681C506145FC62EB /* NSObject+WKCustomProtocolLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+WKCustomProtocolLoader.h"; sourceTree = "<group>"; };
+		E79EF483B6072452810534CB71B212BC /* Pods-IMYWebLoader-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMYWebLoader-resources.sh"; sourceTree = "<group>"; };
+		E7B5D2BEBA31696095327500F9698EFD /* IMYWebUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IMYWebUtils.m; sourceTree = "<group>"; };
+		FA5D495661FAD88E273BE512814F3764 /* libPods-IMYWebLoader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-IMYWebLoader.a"; path = "libPods-IMYWebLoader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC92C42DEC67C24F091E2F178D9F7D06 /* IMYWebRequestHandleManagerDefaultImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMYWebRequestHandleManagerDefaultImpl.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19C6C87F901CC82DED0D07368255C9C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1E68C8572414657003AB24D8562B5F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5EDE9B22F5F0CC997DAE5E3B420212 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A63288A557273DE6BC51B518DE95241 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6597C59544BE77DBFCC4883D93F5A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB88E598D5AC9A33828EFBF27BCD260 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AD3903B20B531B8FF8C02CD8A179B59 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				B3F555E0AD9A5C533E4F2ADCDA9576A6 /* IMYWebLoader.h */,
+				64904A2674266F7D056BE9CA7C210BF5 /* Data */,
+				C6BDFFF6969FC266E6FBE1996584D5AE /* Handler */,
+				BCA56F2061B7E6B3A88E7DA46A5FAB5D /* Header */,
+			);
+			name = Public;
+			path = Public;
+			sourceTree = "<group>";
+		};
+		0BCA4367372A60D111C570818D82AA54 /* HookAjax */ = {
+			isa = PBXGroup;
+			children = (
+				C3DD8EC76B96681EFD339E4BDC337F6A /* IMYWebAjaxHandlerDefaultImpl.h */,
+				094F14BF7FDFF3383E755F3C81C10B00 /* IMYWebAjaxHandlerDefaultImpl.m */,
+				7FB6750E8F06E61EB6FF8EDFF88482EC /* WKUserContentController+IMYHookAjax.m */,
+			);
+			name = HookAjax;
+			path = HookAjax;
+			sourceTree = "<group>";
+		};
+		2D43004A1A47B3CF4D2F51CE38EC8C72 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				13A867AD455B01AA6393B4DBF1748626 /* IMYWebCacheHandlerDefaultImpl.h */,
+				3E17B39DDF2A484F9EB8BA8731D15ACD /* IMYWebCacheHandlerDefaultImpl.m */,
+				2A6976A248C051C88E83FF9B656A771E /* IMYWebNetworkHandlerDefaultImpl.h */,
+				685466DEEC203371A152EE727B509A37 /* IMYWebNetworkHandlerDefaultImpl.m */,
+				C3151AE5832162BBA2E875782D30D4CA /* IMYWebPrefetchHandlerDefaultImpl.h */,
+				3A38C68E14CB0D7585B9EA83520863D2 /* IMYWebPrefetchHandlerDefaultImpl.m */,
+			);
+			name = Handler;
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		2F48A9088B50D7D21F8E4033404AC906 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F969E99F15E7E7C4DBF2B480483A26EE /* Private */,
+				0AD3903B20B531B8FF8C02CD8A179B59 /* Public */,
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		38CAC811CFDAAD6E81BD56D690D8A365 /* URLProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				FC92C42DEC67C24F091E2F178D9F7D06 /* IMYWebRequestHandleManagerDefaultImpl.h */,
+				AE9A2574FC1CE0C1D33DB6F741D4BDBD /* IMYWebRequestHandleManagerDefaultImpl.m */,
+				C4BF8FB2355C9D40E51BA4E990E8BE0B /* IMYWebRequestHandlerDefaultImpl.h */,
+				AF22F8742322EB29FF7FE5A004DD98E9 /* IMYWebRequestHandlerDefaultImpl.m */,
+				343CEC2DFCD0883F7C92F15721883C6B /* IMYWebURLProtocol.h */,
+				D367B93F5860EBC39008EC0363C67C2C /* IMYWebURLProtocol.m */,
+				D563AD4C2CB1406C681C506145FC62EB /* NSObject+WKCustomProtocolLoader.h */,
+				0A6B6D4CFCEADAEC7FCB92D162F4981E /* NSObject+WKCustomProtocolLoader.m */,
+			);
+			name = URLProtocol;
+			path = URLProtocol;
+			sourceTree = "<group>";
+		};
+		391DF87CB0227C44FDD3CC3A52660E1F /* IMYWebLoader */ = {
+			isa = PBXGroup;
+			children = (
+				A99954895AAFB09C3690B0DED3F4D4C1 /* Resources */,
+				2F48A9088B50D7D21F8E4033404AC906 /* Sources */,
+				63429788802BB9F85BE627675864C0D5 /* Support Files */,
+			);
+			name = IMYWebLoader;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		5503AA63D695479613CE4A40DB8C3FAF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D93B3F4C8FB9DE0DFBAB64B3DAA08A0 /* XMLDictionary.xcconfig */,
+				169B28CBA254ED18ED7D3572533C91F3 /* XMLDictionary-dummy.m */,
+				6D1A0E5AFB90930B638BB83B1FF4184D /* XMLDictionary-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XMLDictionary";
+			sourceTree = "<group>";
+		};
+		63429788802BB9F85BE627675864C0D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C53C75BF246ADB8AA5611CC9F8F7181 /* IMYWebLoader.xcconfig */,
+				607D3E9F26852D2EDD805CDE342E65EA /* IMYWebLoader-dummy.m */,
+				16F857CDF7EC83CF372AAA1E75343DB2 /* IMYWebLoader-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Demo/Pods/Target Support Files/IMYWebLoader";
+			sourceTree = "<group>";
+		};
+		64904A2674266F7D056BE9CA7C210BF5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B6772EDBE07BECC489A276FD7E267933 /* IMYWebData.h */,
+				83E4BA401FF36F4113838FDF4605E109 /* IMYWebData.m */,
+			);
+			name = Data;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6AE9E238E700AEF2865A52BD08FDE28C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0BFC7E6B5651385A2A56765D2F7E3E5 /* XMLDictionary */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C96B80B90DD989FF5C36A2DA4D01287 /* Pods-IMYWebLoader */ = {
+			isa = PBXGroup;
+			children = (
+				572F54EE9EBB713EEF7655E94000E667 /* Pods-IMYWebLoader-acknowledgements.markdown */,
+				6E73F934D6659D2F14126867C0877784 /* Pods-IMYWebLoader-acknowledgements.plist */,
+				4EBAB6513E884072F16D57BBAE9057E1 /* Pods-IMYWebLoader-dummy.m */,
+				BDD2B876D28BBE83C596DF885C9994BD /* Pods-IMYWebLoader-frameworks.sh */,
+				E79EF483B6072452810534CB71B212BC /* Pods-IMYWebLoader-resources.sh */,
+				04BA1C58D435CB2A9029BE02E8789909 /* Pods-IMYWebLoader.debug.xcconfig */,
+				860EF35475208355554ABDCF2F64FE77 /* Pods-IMYWebLoader.release.xcconfig */,
+			);
+			name = "Pods-IMYWebLoader";
+			path = "Target Support Files/Pods-IMYWebLoader";
+			sourceTree = "<group>";
+		};
+		710772FAC4DE91299239BC29BF6D5501 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C36820FD94D18405C045A443E8B7F589 /* IMYWebUtils.h */,
+				E7B5D2BEBA31696095327500F9698EFD /* IMYWebUtils.m */,
+			);
+			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				B6295907AC34F746B0DF2A9EB860FE5E /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6AE9E238E700AEF2865A52BD08FDE28C /* Pods */,
+				BB667D5BB4DF4917D340D0E6C81114DB /* Products */,
+				A4E5A9ABEFF1416D6FC2869E01F6761F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		892E878067BC7E26ED58C94042210329 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				ACFF942CBE3C5683AC2E28FE70D4A27A /* IMYWebLoader+Impl.h */,
+				8A4764B6ACA37506631A3877D6E6E660 /* IMYWebLoader+Impl.m */,
+			);
+			name = Loader;
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		8F409B7A246ED1DD4274B2318AB604A5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D8C4D965C9F91FB3005CAC0F851634D0 /* Resources */,
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A4E5A9ABEFF1416D6FC2869E01F6761F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C96B80B90DD989FF5C36A2DA4D01287 /* Pods-IMYWebLoader */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A99954895AAFB09C3690B0DED3F4D4C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F409B7A246ED1DD4274B2318AB604A5 /* Sources */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B0BFC7E6B5651385A2A56765D2F7E3E5 /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				BAA08F978C199208824F5C0AD0B1826D /* XMLDictionary.h */,
+				D4822E3EFC2DBE89F4DB43D54B1E5ED3 /* XMLDictionary.m */,
+				5503AA63D695479613CE4A40DB8C3FAF /* Support Files */,
+			);
+			name = XMLDictionary;
+			path = XMLDictionary;
+			sourceTree = "<group>";
+		};
+		B6295907AC34F746B0DF2A9EB860FE5E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				391DF87CB0227C44FDD3CC3A52660E1F /* IMYWebLoader */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BB667D5BB4DF4917D340D0E6C81114DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC403DCCADAF30EA6311CE68ED86AAF9 /* libIMYWebLoader.a */,
+				FA5D495661FAD88E273BE512814F3764 /* libPods-IMYWebLoader.a */,
+				95270427F9DA32931F1AADFD7E425AA5 /* libXMLDictionary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCA56F2061B7E6B3A88E7DA46A5FAB5D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				AF7055851C79D40C4D2601C30D6422F1 /* IMYWebDefines.h */,
+				9018A400B7943ADD659A698352B06C89 /* IMYWebOperation.h */,
+				0F675D06FB5B17B7D7FCFEF44A7DB3EA /* WKUserContentController+IMYHookAjax.h */,
+			);
+			name = Header;
+			path = Header;
+			sourceTree = "<group>";
+		};
+		C6BDFFF6969FC266E6FBE1996584D5AE /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				05C70FCBA7C1CA0F7C708F4320CAC383 /* IMYWebAjaxHandler.h */,
+				6FD0817A11C996A0CA63088FAE30AC53 /* IMYWebCacheHandler.h */,
+				C7EDC5D569D587B03CFFA90E3206EBB7 /* IMYWebNetworkHandler.h */,
+				27C8F6576ECEF8D8FDE4BD6CB081DACC /* IMYWebPrefetchHandler.h */,
+				1792D41186D051341509C323CD5FEDAB /* IMYWebRequestHandleManager.h */,
+			);
+			name = Handler;
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		D8C4D965C9F91FB3005CAC0F851634D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7103D1FAD6CCBB103036ED571878E985 /* imywk_hookajax.js */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F969E99F15E7E7C4DBF2B480483A26EE /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				2D43004A1A47B3CF4D2F51CE38EC8C72 /* Handler */,
+				0BCA4367372A60D111C570818D82AA54 /* HookAjax */,
+				892E878067BC7E26ED58C94042210329 /* Loader */,
+				38CAC811CFDAAD6E81BD56D690D8A365 /* URLProtocol */,
+				710772FAC4DE91299239BC29BF6D5501 /* Utils */,
+			);
+			name = Private;
+			path = Private;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0308E3DA32E83ED37A5DB3D3A6277FF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				393409694F95312098AD4CBCBBE9BE10 /* IMYWebAjaxHandler.h in Headers */,
+				56C34BD106D3F8AA93DD5E6AED7FBC7A /* IMYWebAjaxHandlerDefaultImpl.h in Headers */,
+				66C3480B3B6E130823872459A5199179 /* IMYWebCacheHandler.h in Headers */,
+				AE9F6F0011CBD0EC0A2C97565BC0CD72 /* IMYWebCacheHandlerDefaultImpl.h in Headers */,
+				480DF9BEB028700172A6A4724B62ABB6 /* IMYWebData.h in Headers */,
+				10C5BD4EF83CC79057DE8177FEAE2699 /* IMYWebDefines.h in Headers */,
+				E13C3BC3E18442DCB64581CBE0DC4CFB /* IMYWebLoader+Impl.h in Headers */,
+				F93C03442B4C7AA2EA67433D1FF97266 /* IMYWebLoader.h in Headers */,
+				5F453934EDB30AC4945532BD82E32BB2 /* IMYWebNetworkHandler.h in Headers */,
+				41473B39D21EC87364AB4AD3605A4965 /* IMYWebNetworkHandlerDefaultImpl.h in Headers */,
+				F603231EDEF9DF53984C7FD60B34434A /* IMYWebOperation.h in Headers */,
+				A2391408122F34925E05D113F64067DB /* IMYWebPrefetchHandler.h in Headers */,
+				049125CCBD1E4E48E417C30880AA5E70 /* IMYWebPrefetchHandlerDefaultImpl.h in Headers */,
+				FB14628CCCCC8504854E13224E2532D3 /* IMYWebRequestHandleManager.h in Headers */,
+				CDEA55387077D27A7A826E542A2C3A2D /* IMYWebRequestHandleManagerDefaultImpl.h in Headers */,
+				D891C74C7D4C6DC141BDD41BED948F89 /* IMYWebRequestHandlerDefaultImpl.h in Headers */,
+				D38DF02BBAA79F133E3EDCBEDA385DC6 /* IMYWebURLProtocol.h in Headers */,
+				89CC7BF2CEDA8E3BA62E223D882C5077 /* IMYWebUtils.h in Headers */,
+				020FB6622AF33495BD84FAF17C229412 /* NSObject+WKCustomProtocolLoader.h in Headers */,
+				5B6AEB23A102D9197A955238B4E5292A /* WKUserContentController+IMYHookAjax.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6043592D68D7CF44F3AB9BBBE65FE793 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EBCC077E0EFE525744B39BBFA3ACF08 /* XMLDictionary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6D36EB059E1F0FA769F14EB4A779D62C /* Pods-IMYWebLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC8E087C2455228045CA2758E9A24CC /* Build configuration list for PBXNativeTarget "Pods-IMYWebLoader" */;
+			buildPhases = (
+				A745DADB2BF7481A22D63BDC20DEC541 /* Sources */,
+				19C6C87F901CC82DED0D07368255C9C7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE7F7B0FF105C7F4CBFC9D6216D86AD8 /* PBXTargetDependency */,
+				BB3041077DE99DCB55708F26B7007FDC /* PBXTargetDependency */,
+			);
+			name = "Pods-IMYWebLoader";
+			productName = "Pods-IMYWebLoader";
+			productReference = FA5D495661FAD88E273BE512814F3764 /* libPods-IMYWebLoader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CCEB5A5E4179EE67B3A38CDB55083BC8 /* IMYWebLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93DF2762F24F62AC49443A55BA7B16AB /* Build configuration list for PBXNativeTarget "IMYWebLoader" */;
+			buildPhases = (
+				AE11C0B05918784135F1BC0A0A955A79 /* Sources */,
+				AA5EDE9B22F5F0CC997DAE5E3B420212 /* Frameworks */,
+				0308E3DA32E83ED37A5DB3D3A6277FF7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC33FC277DA4A267D0959FDA5E27BEE3 /* PBXTargetDependency */,
+			);
+			name = IMYWebLoader;
+			productName = IMYWebLoader;
+			productReference = CC403DCCADAF30EA6311CE68ED86AAF9 /* libIMYWebLoader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E8A71840FB9E9E20AD215722C2DE5F4F /* XMLDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A9703DCBD48D66885334E748917A64 /* Build configuration list for PBXNativeTarget "XMLDictionary" */;
+			buildPhases = (
+				FC14A0DE2A45EF9CD1B139F119524419 /* Sources */,
+				F6597C59544BE77DBFCC4883D93F5A5B /* Frameworks */,
+				6043592D68D7CF44F3AB9BBBE65FE793 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMLDictionary;
+			productName = XMLDictionary;
+			productReference = 95270427F9DA32931F1AADFD7E425AA5 /* libXMLDictionary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BB667D5BB4DF4917D340D0E6C81114DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCEB5A5E4179EE67B3A38CDB55083BC8 /* IMYWebLoader */,
+				6D36EB059E1F0FA769F14EB4A779D62C /* Pods-IMYWebLoader */,
+				E8A71840FB9E9E20AD215722C2DE5F4F /* XMLDictionary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A745DADB2BF7481A22D63BDC20DEC541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2519C632856C0906596A037A5C4B9AD6 /* Pods-IMYWebLoader-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE11C0B05918784135F1BC0A0A955A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95F7473CFD005F301C85DCE159DD62E /* IMYWebAjaxHandlerDefaultImpl.m in Sources */,
+				EB2BD6410EC057086C9636D555389FDD /* IMYWebCacheHandlerDefaultImpl.m in Sources */,
+				4FB83EAD7E47C7699BC80817DC0B7787 /* IMYWebData.m in Sources */,
+				2C3A9DF7E9BEC4A02DBAC87DC32EDCA6 /* IMYWebLoader+Impl.m in Sources */,
+				163E102EB5C64542EA2EE28DAC02B294 /* IMYWebLoader-dummy.m in Sources */,
+				A626681A504BCD5C042A806841A1FFC1 /* IMYWebNetworkHandlerDefaultImpl.m in Sources */,
+				8988814BA9CB2157B9F6D1A4D6B43F22 /* IMYWebPrefetchHandlerDefaultImpl.m in Sources */,
+				074A90D82FA3046A062867BD2A3544AE /* IMYWebRequestHandleManagerDefaultImpl.m in Sources */,
+				58C66C9AE971D25506FB21529C072CFD /* IMYWebRequestHandlerDefaultImpl.m in Sources */,
+				FBB4661C8C2C3F8BC82F7C4A5A888267 /* IMYWebURLProtocol.m in Sources */,
+				4A9E995FFA4DF1755755069970F51066 /* IMYWebUtils.m in Sources */,
+				727B06978C5CBB50F80B45B88FE1148B /* NSObject+WKCustomProtocolLoader.m in Sources */,
+				BAFBED3F5D9130823C222B61FBCB18CA /* WKUserContentController+IMYHookAjax.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC14A0DE2A45EF9CD1B139F119524419 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D7306FEABE5C52E9BD9222E515D17FC /* XMLDictionary-dummy.m in Sources */,
+				118703A0B27D8BE032448BF8E7218876 /* XMLDictionary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE7F7B0FF105C7F4CBFC9D6216D86AD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IMYWebLoader;
+			target = CCEB5A5E4179EE67B3A38CDB55083BC8 /* IMYWebLoader */;
+			targetProxy = CFB636C1D56C964C27F70E7C18219108 /* PBXContainerItemProxy */;
+		};
+		BB3041077DE99DCB55708F26B7007FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XMLDictionary;
+			target = E8A71840FB9E9E20AD215722C2DE5F4F /* XMLDictionary */;
+			targetProxy = D7F73BB0ED48B3EBFAF0CD5B58EA15E5 /* PBXContainerItemProxy */;
+		};
+		FC33FC277DA4A267D0959FDA5E27BEE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XMLDictionary;
+			target = E8A71840FB9E9E20AD215722C2DE5F4F /* XMLDictionary */;
+			targetProxy = 63CEC978B4479414747C699CE608E9FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		179CD57130FEECD73A4ACEE132CF28EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C53C75BF246ADB8AA5611CC9F8F7181 /* IMYWebLoader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IMYWebLoader/IMYWebLoader-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		783CB3AEAEB930FDC900204A28CFD711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D93B3F4C8FB9DE0DFBAB64B3DAA08A0 /* XMLDictionary.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XMLDictionary/XMLDictionary-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4B4F3E9FBF3648C96678BDB7503E047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04BA1C58D435CB2A9029BE02E8789909 /* Pods-IMYWebLoader.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B771A82457A70746785FC18B569EF9B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D93B3F4C8FB9DE0DFBAB64B3DAA08A0 /* XMLDictionary.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XMLDictionary/XMLDictionary-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CF1C3F20C6BAEA7A0B874DC4311C28D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 860EF35475208355554ABDCF2F64FE77 /* Pods-IMYWebLoader.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CF7953F66E785E8876EB4D370D777D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F4AB01876E18F63E248D80B66EC8EAFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C53C75BF246ADB8AA5611CC9F8F7181 /* IMYWebLoader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IMYWebLoader/IMYWebLoader-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FC8E087C2455228045CA2758E9A24CC /* Build configuration list for PBXNativeTarget "Pods-IMYWebLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4B4F3E9FBF3648C96678BDB7503E047 /* Debug */,
+				CF1C3F20C6BAEA7A0B874DC4311C28D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7953F66E785E8876EB4D370D777D50 /* Debug */,
+				79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49A9703DCBD48D66885334E748917A64 /* Build configuration list for PBXNativeTarget "XMLDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783CB3AEAEB930FDC900204A28CFD711 /* Debug */,
+				B771A82457A70746785FC18B569EF9B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93DF2762F24F62AC49443A55BA7B16AB /* Build configuration list for PBXNativeTarget "IMYWebLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4AB01876E18F63E248D80B66EC8EAFB /* Debug */,
+				179CD57130FEECD73A4ACEE132CF28EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,7 @@
+platform :ios,'7.0'
+
+target 'IMYWebLoader' do
+
+pod 'IMYWebLoader', :path => './..'
+
+end
