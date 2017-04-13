@@ -15,6 +15,7 @@ iOS8 除了WKWebView 之后更是连 NSURLProtocol 都不支持了，还好 WebK
 
 突然想到 前端的 post body 请求，大都都是通过 XMLHttpRequest 来请求的，为何我不能在 JS 层去 hook 呢？ （还在使用 from 表单的，就让它去屎吧）
 
+hook-ajax 可能支持的没那么全，遇到问题可以帮忙改改，然后提个 pull request （一般的AJAX请求 肯定都是没问题的啦）
 
 懒得写 readme ... 了
 
