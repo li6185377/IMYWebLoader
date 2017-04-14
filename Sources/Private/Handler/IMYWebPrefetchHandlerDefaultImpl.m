@@ -58,7 +58,6 @@
 - (id<IMYWebPrefetcherProtocol>)lockPrefetchHTMLDetail:(NSString *)urlString
 {
     NSURLRequest *request = [[IMYWebLoader defaultNetworkHandler] requestWithString:urlString];
-    request = [[IMYWebLoader defaultNetworkHandler] requestByTransforming:request];
     if (!request) {
         return nil;
     }
@@ -210,7 +209,6 @@
         }
         
         NSURLRequest *request = [[IMYWebLoader defaultNetworkHandler] requestWithString:fileURL];
-        request = [[IMYWebLoader defaultNetworkHandler] requestByTransforming:request];
         if (!request) {
             return;
         }

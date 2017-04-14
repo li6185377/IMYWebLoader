@@ -16,9 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 生成 发起请求的 Request
 - (NSURLRequest *)requestWithString:(NSString *)urlString;
 
-/// 转换请求的 Request，可用于 域名收敛，https，参数修改 等操作
-- (NSURLRequest *)requestByTransforming:(NSURLRequest *)request;
-
 /// 发起网络请求，不会走 transform 步骤
 - (id<IMYWebOperation>)dataTaskWithRequest:(NSURLRequest *)request completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler;
 

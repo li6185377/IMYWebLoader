@@ -64,7 +64,7 @@
 
 - (void)startLoading
 {
-    NSURLRequest *request = [[IMYWebLoader defaultNetworkHandler] requestByTransforming:self.request];
+    NSURLRequest *request = self.request;
     id<IMYWebRequestHandler> requestHandler = nil;
     NSArray *requestHandlerClass = [IMYWebLoader defaultRequestManager].requestHandlerClass;
     for (Class<IMYWebRequestHandler> handlerClass in requestHandlerClass) {

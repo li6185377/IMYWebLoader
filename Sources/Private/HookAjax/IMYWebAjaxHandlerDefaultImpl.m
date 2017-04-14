@@ -8,6 +8,7 @@
 
 #import "IMYWebAjaxHandlerDefaultImpl.h"
 #import "IMYWebUtils.h"
+#import "IMYWebLoader.h"
 
 @implementation IMYWebAjaxHandlerDefaultImpl
 
@@ -32,7 +33,7 @@
     }
     [request setAllHTTPHeaderFields:headers];
     
-    [[[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    [[IMYWebLoader defaultNetworkHandler] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSHTTPURLResponse *httpResponse = nil;
         if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
             httpResponse = (id)response;
@@ -45,7 +46,7 @@
         if (completedBlock) {
             completedBlock(httpResponse.statusCode, allHeaderFields, responseString);
         }
-    }] resume];
+    }];
 }
 
 - (NSString *)responseStringWithData:(NSData *)data charset:(NSString *)charset

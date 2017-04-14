@@ -21,11 +21,6 @@
     return request;
 }
 
-- (NSURLRequest *)requestByTransforming:(NSURLRequest *)request
-{
-    return request;
-}
-
 - (id<IMYWebOperation>)dataTaskWithRequest:(NSURLRequest *)request completionHandler:(void (^)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler
 {
     NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:completionHandler];
@@ -33,7 +28,7 @@
     return (id)task;
 }
 
-+ (void)networkRequestThreadEntryPoint:(id)__unused object
++ (void)networkRequestThreadEntryPoint
 {
     @autoreleasepool {
         [[NSThread currentThread] setName:@"IMYWebNetworkThread"];
@@ -49,7 +44,7 @@
     static NSThread *_networkRequestThread = nil;
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
-        _networkRequestThread = [[NSThread alloc] initWithTarget:[IMYWebNetworkHandlerDefaultImpl class] selector:@selector(networkRequestThreadEntryPoint:) object:nil];
+        _networkRequestThread = [[NSThread alloc] initWithTarget:[IMYWebNetworkHandlerDefaultImpl class] selector:@selector(networkRequestThreadEntryPoint) object:nil];
         [_networkRequestThread start];
     });
     

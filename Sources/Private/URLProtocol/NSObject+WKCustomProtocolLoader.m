@@ -24,10 +24,12 @@
 
 + (void)load
 {
-    Class clazz = NSClassFromString([NSString stringWithFormat:@"%@%@%@", @"WK", @"Custom", @"ProtocolLoader"]);
-    SEL originalSelector = NSSelectorFromString([NSString stringWithFormat:@"%@%@%@", @"initWithCustomProtocol", @"ManagerProxy:customProtocolID", @":request:connection:"]);
-    SEL swizzledSelector = @selector(wkloader_initWithProtocolManager:protocolID:request:connection:);
-    [IMYWebUtils swizzleClass:clazz origMethod:originalSelector withMethod:swizzledSelector];
+    Class clazz = NSClassFromString([NSString stringWithFormat:@"%@%@%@",@"WK",@"Custom",@"ProtocolLoader"]);
+    SEL swizzleSEL = NSSelectorFromString([NSString stringWithFormat:@"%@%@%@",@"initWithCustomProtocol",@"ManagerProxy:customProtocolID",@":request:connection:"]);
+    [IMYWebUtils swizzleClass:clazz origMethod:swizzleSEL withMethod:@selector(wkloader_initWithProtocolManager:protocolID:request:connection:)];
+    
+    SEL swizzleLegacySEL = NSSelectorFromString([NSString stringWithFormat:@"%@%@",@"initWithLegacyCustomProtocolManagerProxy",@":customProtocolID:request:"]);
+    [IMYWebUtils swizzleClass:clazz origMethod:swizzleLegacySEL withMethod:@selector(wkloader_initWithLegacyCustomProtocolManagerProxy:customProtocolID:request:)];
 }
 
 - (id)wkloader_initWithLegacyCustomProtocolManagerProxy:(void*)customProtocolManagerProxy customProtocolID:(uint64_t)customProtocolID request:(NSURLRequest *)request
