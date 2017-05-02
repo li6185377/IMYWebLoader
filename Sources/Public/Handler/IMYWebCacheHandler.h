@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)cacheKeyForRequest:(NSURLRequest *)request;
 
 - (nullable IMYWebData *)dataForKey:(NSString *)key;
-- (void)setData:(IMYWebData *)data forKey:(NSString *)key;
+- (void)setData:(nullable IMYWebData *)data forKey:(NSString *)key;
 
 @end
 

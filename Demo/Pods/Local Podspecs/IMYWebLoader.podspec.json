@@ -9,8 +9,8 @@
     "ljh": "137249466@qq.com"
   },
   "source": {
-    "git": "https://github.com/li6185377/IMYWebLoader",
-    "tag": "IMYWebLoader"
+    "git": "https://github.com/li6185377/IMYWebLoader.git",
+    "tag": "0.1"
   },
   "requires_arc": true,
   "platforms": {

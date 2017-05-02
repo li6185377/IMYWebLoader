@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (class, readonly, nonatomic) id<IMYWebPrefetchHandler> defaultPrefetchHandler;
 ///数据请求
 @property (class, readonly, nonatomic) id<IMYWebNetworkHandler> defaultNetworkHandler;
-/// Ajax
+/// Ajax 需要手动 执行 imy_installHookAjax，目前需要针对 WKWebView
 @property (class, readonly, nonatomic) id<IMYWebAjaxHandler> defaultAjaxHandler;
 
 @end
