@@ -28,17 +28,28 @@
     id requestID = body[@"id"];
     NSString *method = body[@"method"];
     id requestData = body[@"data"];
-    NSDictionary *requestHeaders = body[@"headers"];
+    NSMutableDictionary *requestHeaders = [NSMutableDictionary dictionaryWithDictionary:body[@"headers"]];
     NSString *urlString = body[@"url"];
     
-    [[IMYWebLoader defaultAjaxHandler] startWithMethod:method
-                                                   url:urlString
-                                               baseURL:self.webView.URL
-                                               headers:requestHeaders
-                                                  body:requestData
-                                        completedBlock:^(NSInteger httpCode, NSDictionary * _Nullable headers, NSString * _Nullable data) {
-                                            [self requestCallback:requestID httpCode:httpCode headers:headers data:data];
-                                        }];
+    //这里模拟Webview请求的时候的ua
+    [self.webView evaluateJavaScript:@"navigator.userAgent" completionHandler:^(id result, NSError *error) {
+        
+        NSString *webviewUA = result;
+        if (webviewUA) requestHeaders[@"User-Agent"] = webviewUA;
+        
+        
+        [[IMYWebLoader defaultAjaxHandler] startWithMethod:method
+                                                       url:urlString
+                                                   baseURL:self.webView.URL
+                                                   headers:requestHeaders
+                                                      body:requestData
+                                            completedBlock:^(NSInteger httpCode, NSDictionary * _Nullable headers, NSString * _Nullable data) {
+                                                [self requestCallback:requestID httpCode:httpCode headers:headers data:data];
+                                            }];
+        
+    }];
+    
+   
 }
 
 - (void)requestCallback:(id)requestId httpCode:(NSInteger)httpCode headers:(NSDictionary *)headers data:(NSString *)data
