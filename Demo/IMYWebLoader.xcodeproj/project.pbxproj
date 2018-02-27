@@ -192,7 +192,7 @@
 				TargetAttributes = {
 					3629805C1E64270A0091D742 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 588AWE66S7;
+						DevelopmentTeam = AX5C7YM44M;
 						ProvisioningStyle = Automatic;
 					};
 					362980751E64270A0091D742 = {
@@ -433,7 +433,7 @@
 			baseConfigurationReference = 1E1013721227A4D6FC824714 /* Pods-IMYWebLoader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 588AWE66S7;
+				DEVELOPMENT_TEAM = AX5C7YM44M;
 				INFOPLIST_FILE = IMYWebLoader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -447,7 +447,7 @@
 			baseConfigurationReference = 433795A53BC2B8F0327E78AD /* Pods-IMYWebLoader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 588AWE66S7;
+				DEVELOPMENT_TEAM = AX5C7YM44M;
 				INFOPLIST_FILE = IMYWebLoader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
