@@ -56,9 +56,12 @@
         jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     }
     NSString *jsScript = [NSString stringWithFormat:@"window.imy_realxhr_callback(%@, %@);", requestId, jsonString?:@"{}"];
-    [self.webView evaluateJavaScript:jsScript completionHandler:^(id result, NSError *error) {
-        
-    }];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.webView evaluateJavaScript:jsScript completionHandler:^(id result, NSError *error) {
+            
+        }];
+    });
+  
 }
 
 @end
