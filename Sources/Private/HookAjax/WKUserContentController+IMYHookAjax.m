@@ -45,7 +45,13 @@
 {
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     dict[@"status"] = @(httpCode);
-    dict[@"headers"] = headers;
+    if (headers) {
+        NSString *headerString = ({
+            NSData *data = [NSJSONSerialization dataWithJSONObject:headers options:NSJSONWritingPrettyPrinted error:nil];
+            [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        });
+        dict[@"headers"] = headerString;
+    }
     if (data.length > 0) {
         dict[@"data"] = data;
     }
